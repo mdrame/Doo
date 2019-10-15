@@ -3,23 +3,42 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
+database = list()
 
 
 # This is the home route
 @app.route('/', methods=['POST', 'GET'])
 def homeRoute():
 
-# get data from createAndEdit route to be display in index.html
-    if request.method == "POST":
-        form_Infos = request.form
 
-    return render_template('index.html', form_Infos=form_Infos)
+
+    return render_template('index.html')
+
+#Rout shoes ever listing created 
+@app.route('/notes', methods=['POST', 'GET'])
+def notes():
+
+    if request.method == 'POST':
+
+        form_infos = {'color': request.form.get('color'),
+                      'text':  request.form.get('comment'),
+                      'action':request.form.get('action')}
+        # testing
+        # print(form_infos['color'])
+        # print(form_infos['text'])
+        # print(form_infos['action'])
+        
+
+    return render_template('index.html', form_infos=form_infos)
+
 
 
 # forms route " this route  connects from a href link in the index.html"
 # https://www.tutorialspoint.com/flask/flask_sending_form_data_to_template.htm
-@app.route('/createAndEdit', methods=['POST', 'GET'])
-def createAndEdit():
+@app.route('/create', methods=['POST', 'GET'])
+def create():
+
+    
 
 
     return render_template("createAndEdit.html" )
