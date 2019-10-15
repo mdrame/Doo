@@ -1,2 +1,20 @@
 *{
     background: coral;
+}
+
+
+#big-body-wrap{
+
+    /* take full screen */
+    width: 100%; 
+    height: 100px;
+    background: blueviolet;
+    margin: 10px;
+    text-align: center;
+
+
+}
+
+
+
+

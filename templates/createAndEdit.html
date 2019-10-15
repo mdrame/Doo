@@ -1,0 +1,48 @@
+<!doctype html>
+
+
+<html>
+    <head>
+        <title> cNote | Base on which ever route come first  </title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/createAndEdit.css') }}">
+    </head>
+
+
+    <body>
+
+        <div class="center_wrap">
+
+        <a href="/"> H O M E </a>
+
+        <h1> Create / Edit </h1>
+
+        <form action="/"  method="post">
+
+            <!-- From : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color -->
+            <p>Choose Card Color :</p>
+
+            <div>
+                <input type="color" id="head" name="pink" value="#e66465">
+            </div>
+           
+            <textarea rows="15" cols="54" placeholder="Enter text here..." name="comment" ></textarea>
+
+            <div>
+            <select name="num_compliments" class="custom-select" >
+
+                    <option value="0"> Action:  </option>
+                    <option value="1"> 🔥: Urgent </option>
+                    <option value="2"> 👉🏾: Got Time</option>
+                </select>
+            </div>
+
+            <input type="submit" name="submit" class="submit_button">
+            
+        </form>
+
+        </div>
+    
+
+    </body>
+
+</html>
