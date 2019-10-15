@@ -16,9 +16,13 @@
             <h4> ToDo</h4>
             <a href="create"> + </a>
 
-            <h3> {{ form_infos['color'] }}</h3>
-            <h3> {{ form_infos['text'] }}</h3>
-            <h3> {{ form_infos['action'] }}</h3>
+            <a href="/view">
+                <div id="todo_object_wrap">
+                    <h3> {{ form_infos['color'] }}</h3>
+                    <h3> {{ form_infos['text'] }}</h3>
+                    <h3> {{ form_infos['action'] }}</h3>
+                </div>
+            </a>
             
         </div>
 

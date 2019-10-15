@@ -31,6 +31,13 @@ def notes():
 
     return render_template('index.html', form_infos=form_infos)
 
+#View todo list item route
+@app.route('/view')
+def view():
+
+
+    return render_template('view.html')
+
 
 
 # forms route " this route  connects from a href link in the index.html"
