@@ -11,9 +11,44 @@
     background: blueviolet;
     margin: 10px;
     text-align: center;
+    float: left;
 
 
 }
+
+#todo{
+
+    width: 30%; 
+    height: atuo;
+    background: red;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+#doing{
+
+    width: 30%; 
+    height: atuo;
+    background: blueviolet;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+
+#done{
+
+    width: 30%; 
+    height: atuo;
+    background: blueviolet;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+
+}
+
 
 
 
