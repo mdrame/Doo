@@ -10,40 +10,29 @@
 
     <body>
 
-        <a href="/create"> + </a>
+        
         <div id="big-body-wrap" >
             <!-- create 3 big gaint div that divide both height and width equally -->
-            <div id="todo"  >
-                <!-- create 3 big gaint div that divide both height and width equally -->
-                <h4> Todo </h4>
-                <a href="/view" class="viewNote">
-                   
-                <div class="notes">
-                    {{ form_infos['text'] }}
-                    {{ form_infos['action'] }}
-                   
-                   
-                </div>
-                
-                </a>
+            <a href="/todo" class="a">
+            <div id="todo" class="dashboard">
+                    <h1> TODO</h1>
             </div>
+         </a>
+
+            <a href="/doing"  class="a">
+            <div id="doing" class="dashboard">
+                    <h1> DOING </h1>
+            </div>
+            </a>
             
 
-            <div id="doing" >
-                <!-- create 3 big gaint div that divide both height and width equally -->
-                <h4> Doing </h4>
-                <div class="notes">
-                    
-                </div>
+            <a href="/done" class="a">
+            <div id="done" class="dashboard">
+                    <h1 style=" color: black "> DONE </h1>
             </div>
-    
-            <div id="done" >
-                <!-- create 3 big gaint div that divide both height and width equally -->
-                <h4> Done </h4>
-                <div class="notes">
-                    
-                </div>
-            </div>
+            </a>
+
+        
 
         </div>
 

@@ -42,8 +42,9 @@ def notes():
         # print(form_infos['text'])
         # print(form_infos['action'])
         
+        database.append(form_infos)
 
-        return render_template('index.html', form_infos=form_infos)
+        return render_template('index.html', database=database)
 
 
 #View todo list item route
