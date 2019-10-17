@@ -1,0 +1,49 @@
+<!doctype html>
+
+
+<html>
+    <head>
+        <title> cNote | TODO </title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/todo.css') }}">
+    </head>
+
+
+    <body>
+
+        <div class="create">
+            <a href="/create" class="create_a"> <h1> +  </h1> </a>
+            
+        </div>
+
+        <div  class="object-wrap">
+
+            <div id="objects">
+                
+                <p> message ...</p>
+                <p>Stage: Urgent </p>
+                <p> Date: 02/84/2019 </p>
+            <div id="actions">
+                <!-- buttons -->
+                <a href="/edit">Edit</a>
+                <a href="/delete">Delete </a>
+
+            <form action="/todo_Action" method="POST">               
+                 <select>
+                        <option value="Doing">Doing</option>
+                        <option value="Done">Done</option>
+                        <option value="audi" selected>Action:</option>
+                </select>
+                <button type="submit"> Send </button>
+            </form>
+                
+            </div>
+            </div>
+
+
+        </div>
+        
+       
+
+    </body>
+
+</html>
