@@ -9,8 +9,10 @@
 
 
     <body>
-        {% for key in database %}
-            <h4> {{ database[key] }}</h4>
+
+        <a href="/notes/new"> Create Note </a>
+        {% for index in range(database | length) %}
+            <h4> {{ database[index] }}</h4>
         {% endfor %}
        
     </body>
