@@ -1,0 +1,20 @@
+.jumbotron{
+    color: White;
+    background: rgb(236, 140, 172);
+}
+
+
+.jumbotron .display-4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+} 
+
+.lead{
+    color: rgb(51, 48, 48);
+}
+
+p{
+
+    color: black;
+}
